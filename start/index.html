@@ -114,11 +114,10 @@ ydygg.onclick = function(){
       <p>你往下看干嘛 awa</p>
     </div>
 <script>
-colorful_egg.onclick = function(){
-// 初始化点击次数
+ colorful_egg.onclick = function(){
   let clickCount = 0;
-  // 绑定点击事件
   colorful_egg.onclick = function() {
+  
     clickCount++; // 每点一次 +1
 
     // 根据点击次数显示不同内容
@@ -151,8 +150,8 @@ colorful_egg.onclick = function(){
    }
   else if(clickCount === 101){
     alert('被骗了还玩(°Д°) 真正的密码是:ydyggexexexexexexex');
+     clickCount = 0;
    }
-   clickCount = 0;
     }}
 
 </script>
