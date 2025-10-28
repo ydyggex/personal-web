@@ -3,14 +3,158 @@
   <head>
     <meta charset="utf-8" />
     <title>发生什么事了</title>
+    <style>
+      /* 关键：确保 html 和 body 都撑满视口 */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        color: white;
+        opacity: 0.95;
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+      }
+
+      h1 {
+        color: rgb(212, 99, 235);
+        text-align: center;
+        padding: 20px 0;
+        margin: 0;
+      }
+
+      .content {
+        background-color: rgba(53, 53, 53, 0.493); /* 半透明白底提升可读性 */
+        padding: 20px;
+        font-size: 30px;
+        margin: 20px auto;
+        max-width: 800px;
+        border-radius: 10px;
+      }
+
+      .content a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: linear-gradient(45deg, #675a8b, #88d3ce);
+        opacity: 0.88;
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: bold;
+      }
+
+      .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0);
+        text-align: right;
+        font-size: xx-small;
+        color: transparent;
+        background: linear-gradient(45deg, #89888d, #88d3ce);
+        opacity: 0.1;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        box-sizing: border-box;
+      }
+
+      /* 底部半透明图片层（可选）*/
+      .bg-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("image/屏幕截图 2025-10-21 132940.png") no-repeat
+          center/cover;
+        opacity: 0.9;
+        z-index: -1;
+      }
+    </style>
   </head>
+
   <body>
-<div style="background-color: rgb(189, 188, 189);text-align: center;padding: 5px;font-size: 30px;">
-<p> 我的网站 </p>
-<img src="image\屏幕截图 2025-10-21 132940.png" style="opacity: 0.5;">
-</div>
-<div style="font-size: xx-small;background-color: rgb(51, 51, 51);padding: 10px;text-align: right;">
-    <p> 你往下看干嘛 awa</p>
-</div>
+    <!-- 可选：叠加一层半透明背景图 -->
+    <div class="bg-overlay" id="ydyggex"></div>
+
+    <h1 id="ydygg">ydygg的网站</h1>
+
+<script>
+ydygg.onclick = function(){
+ let a = prompt('请输入密码')
+ if(a == 'ydyggex'){
+  alert('密码正确')
+  window.location.href = 'https://vdse.bdstatic.com//192d9a98d782d9c74c96f09db9378d93.mp4'
+ }
+  else if(a == 'ydyggexexexexexexex'){
+  alert('密码正确(hahaha)')
+  alert('奖励你第五十一号元素')
+ window.location.href = 'https://ydyggex.github.io/personal-web/start/heihei.html'
+ }
+ else if(a == 'Ciallo'){alert('你真恶心(⊙ω⊙)')}
+ else{
+  alert('你搁这儿蒙呢(╯▔皿▔)╯')
+ }
+
+}
+  </script>
+    <div class="content">
+      <p>这是正文</p>
+      <a href="https://ydyggex.github.io/personal-web/start/index.html">
+        这是我的网站
+      </a>
+    </div>
+ 
+    <div class="footer" id="colorful_egg">
+      <p>你往下看干嘛 awa</p>
+    </div>
+<script>
+colorful_egg.onclick = function(){
+// 初始化点击次数
+  let clickCount = 0;
+  // 绑定点击事件
+  colorful_egg.onclick = function() {
+    clickCount++; // 每点一次 +1
+
+    // 根据点击次数显示不同内容
+    if (clickCount === 1) {
+      alert('你往下看干嘛 awa?');
+    } else if (clickCount === 2) {
+      alert('还点？？');
+    } else if (clickCount === 3) {
+      alert('视力真好！发现彩蛋了~');
+    } else if (clickCount === 4) {
+      alert('再点我要生气了！(╯°□°）╯');
+    } 
+      else if (clickCount === 10) {
+      alert('不是哥们.');}
+         else if (clickCount === 11) {
+      alert('想玩?');}
+         else if (clickCount === 12) {
+      alert('还玩??');}
+   else if (clickCount === 13) {
+      alert('好吧好吧,我认输了');}
+   else if (clickCount === 14) {
+      alert('你有病吧');}
+   else if (clickCount === 15) {
+      alert('给你密码行了吧 密码是:ydyggex');}
+   else if(clickCount === 50){
+    alert('你又想玩了？');
+   }
+   else if(clickCount === 100){
+    alert('你又想玩了？');
+   }
+  else if(clickCount === 101){
+    alert('被骗了还玩(°Д°) 真正的密码是:ydyggexexexexexexex');
+   }
+   clickCount = 0;
+    }}
+
+</script>
   </body>
 </html>
